@@ -1,0 +1,208 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #222021;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+.headerHeroSection{
+    height: fit-content;
+    background-image: url(./assets/heroleftbackground.png);
+    background-repeat: no-repeat;
+
+}
+/* header Seciton */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+}
+.logo img{
+    width: 150px;
+}
+.navItems{
+    width: 50%;
+}
+.navItems ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+/* Hero Section */
+.herosectionset{
+    display: flex;
+    justify-content: end;
+    height: 90vh;
+}
+.heroSection{
+    height: 80vh;
+    width: 70%;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background-color: #1E0C06;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heroSectionText{
+
+    width: 45%;
+    height: 90%;
+    padding: 0px 50px;
+    position: relative;
+}
+.heroSection::after {
+  content: '';
+  position: absolute;
+  top: 55%;
+  right: 19%;
+  width: 25%;      /* or a specific width like 50% */
+  height: 2px;      /* line thickness */
+  background-color: #ffffff;
+  transform: rotate(90deg);
+  margin-top: 8px;  /* space between the text and the line */
+}
+
+.heroSectionText h1{
+    font-size: 75px;
+    font-weight: 500;
+}
+.heroSectionText p {
+    font-size: 25px;
+    width: 300px;
+    color: #fdbb81;
+}
+.heroSectionText button{
+    padding: 15px 60px;
+    background-color: #7B91AF;
+    border-width: 0px;
+    border-radius: 8px ;
+    margin-top: 30px;
+}
+.heroSectionImages{
+    width: 40%;
+    height: 90%;
+    /* padding: 0px 50px; */
+    
+    
+    /* position: relative; */
+}
+.heroSectionImages img{
+
+    width: 40%;
+}
+.heroimg1 img{
+ 
+    position: relative;
+    left: 50%;
+    
+}
+.heroimg3 img{
+    width: 12%;
+    position:absolute;
+    right: 3%;
+    bottom: 10%;
+}
+
+
+
+
+/* Wood we use Section */
+.WoodUse{
+    height: 80vh;
+    padding: 70px 0px;
+    
+}
+.WoodUse h2{
+    font-size: 50px;
+    width: 40%;
+    font-weight: 600;
+    position:relative;
+    left: 20%;
+    margin-bottom: 50px;
+}
+.woodUseCards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.woodUseCrd{
+    width: 20%;
+
+    
+}
+.woodusecardimg{
+    display: flex;
+
+   
+}
+.woodusecardimg img{
+    height: 100px;
+    width: 120px;
+    border-radius:8px ;
+}
+.woodUseCrd h4{
+    width: 120px;
+    text-align: center;
+    font-size: 20px;
+    margin:20px 0px ;
+}
+.wooduselist ul{
+    list-style: none;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 400px;
+}
+.wooduselist ul i{
+    color: #FFC099;
+}
+
+
+
+/* slider section */
+.sliderSection{
+
+    height: 90vh;
+
+}
+.sliderSection h2{
+    /* margin-top: 150px; */
+
+    font-size: 60px;
+    font-weight: 500;
+    margin-left: 20%;
+    margin-bottom: 30px;
+}
+.slider{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.sliderimg {
+    width: 85%;
+    height: 100%;
+
+}
+.sliderimg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+.slider i{
+    font-size: 50px;
+    
+}
+
+
+/* Advantages Section */
