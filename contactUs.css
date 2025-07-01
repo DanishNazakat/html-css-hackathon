@@ -1,0 +1,23 @@
+.contactUs{
+    height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contactUsText{
+    width: 30%;
+}
+.contactUsText h2{
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.contactUsText p{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.contactUsMap iframe{
+    border-radius: 16px;
+}

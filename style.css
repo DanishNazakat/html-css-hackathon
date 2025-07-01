@@ -7,7 +7,12 @@ body{
     background-color: #222021;
     color: #ffffff;
     font-family: sans-serif;
+
       
+}
+.main{
+    background-image: url(./assets/background.png);
+    background-repeat: repeat;
 }
 .headerHeroSection{
     height: 100vh;
@@ -19,7 +24,7 @@ body{
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 30px 0px;
 }
 .logo img{
@@ -34,6 +39,14 @@ body{
     list-style: none;
     font-size: 20px;
     font-weight: 700;
+}
+.navItems ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.navItems ul li a:hover{
+    color: #7B91AF;
+    transition: 1s
 }
 /* Hero Section */
 .herosectionset{
@@ -355,15 +368,16 @@ body{
 
 /* form Section */
 .formSection{
-    height: 70vh;
-
+    height: 80vh;
+ 
     width: 80%;
     padding: 50px;
     margin: auto;
-    background-image: url(./assets/heroimg3.png);
+    background-image: url(./assets/formimg.png);
     background-repeat: no-repeat;
-    background-position-x: 90%;
-    background-position-y:110%;
+    background-position-x: 130%;
+    background-position-y:170%;
+     
     margin-top: 100px;
 }
 .formSection h2{
@@ -374,6 +388,7 @@ body{
     right: 10%;
 }
 .formsec{
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -422,6 +437,7 @@ body{
     border-width: 0px;
     background-color:#7B91AF ;
     color: white;
+    font-size: 20px;
 }
 
 
@@ -430,9 +446,8 @@ body{
 .footerSection{
     height: 30vh;
     padding: 50px 100px;
-   
     box-shadow: 5px 0px 10px 10px #afaeae52;
-    line-height: 100PX;
+ 
 }
 .footer{
     display: flex;
@@ -441,4 +456,56 @@ body{
 }
 .footer P{
     font-size: 22px;
+    width: 20%;
+}
+.footer p i{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.contactusp{
+    display: flex;
+    gap: 20px;
+
+}
+.contactusp p{
+    width: 200px;
+}
+.contactusp i {
+    font-size: 30px;
+}
+.footerprivacy{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+@media (min-width:300px) and (max-width:800px){
+    .header{
+    
+    }
+    .logo img{
+        width: 50%;
+    }
+
+    .navItems ul{
+        display: block;
+    }
+
+    /* hero section */
+    .herosectionset{
+        background-color: azure;
+    }
+    .heroSection{
+        display: block;
+    }   
+    .heroSection::after{
+        transform: rotate(0deg);
+        bottom: -10%;
+    }
 }
