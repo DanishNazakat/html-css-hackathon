@@ -21,3 +21,18 @@
 .contactUsMap iframe{
     border-radius: 16px;
 }
+
+
+@media (min-width:300px) and (max-width:800px){
+    .contactUs{
+        flex-direction: column;
+
+    }
+    .contactUsText{
+        background-color: aquamarine;
+        width: 80%;
+    }
+    .contactUsMap{
+        margin-bottom: 50px;
+    }
+}

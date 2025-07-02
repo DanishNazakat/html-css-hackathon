@@ -13,6 +13,13 @@ body{
 .main{
     background-image: url(./assets/background.png);
     background-repeat: repeat;
+    
+}
+.main button:hover{
+    background-color: #8bbbff;
+    box-shadow: 2px 2px 10px #fdbb81;
+    transition: 1s;
+    transform: scale(1.1);
 }
 .headerHeroSection{
     height: 100vh;
@@ -25,15 +32,24 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    align-items: start;
     padding: 30px 0px;
+
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
 }
 .logo img{
     width: 150px;
 }
 .navItems{
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 .navItems ul{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -45,9 +61,29 @@ body{
     color: #ffffff;
 }
 .navItems ul li a:hover{
-    color: #7B91AF;
-    transition: 1s
+    color: #fdbb81;
+    transition: 0.5s; 
 }
+.headericon{
+    display: none;
+    height: 30px;
+    
+}
+.headeritem{
+    text-align: center;
+    line-height: 40px;
+}
+.headeritem  ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+
+
+/* hero section */
+
 /* Hero Section */
 .herosectionset{
     display: flex;
@@ -77,11 +113,11 @@ body{
   position: absolute;
   top: 55%;
   right: 19%;
-  width: 25%;      /* or a specific width like 50% */
-  height: 2px;      /* line thickness */
+  width: 25%;      
+  height: 2px;      
   background-color: #ffffff;
   transform: rotate(90deg);
-  margin-top: 8px;  /* space between the text and the line */
+  margin-top: 8px;  
 }
 
 .heroSectionText h1{
@@ -99,14 +135,14 @@ body{
     border-width: 0px;
     border-radius: 8px ;
     margin-top: 30px;
+    color: white;
+    font-size: 22px;
+
 }
 .heroSectionImages{
     width: 40%;
     height: 90%;
-    /* padding: 0px 50px; */
-    
-    
-    /* position: relative; */
+
 }
 .heroSectionImages img{
 
@@ -129,6 +165,15 @@ body{
     right: 3%;
     bottom: 10%;
 }
+
+.heroSection:hover{
+    box-shadow: 2px 2px 10px #fdbb81;
+    transition: 2s;
+}
+
+
+
+
 
 
 
@@ -158,6 +203,11 @@ body{
 
     
 }
+.woodUseCrd:hover{
+  
+    transition: 1s;
+    transform: translateX(20px);
+}
 .woodusecardimg{
     display: flex;
 
@@ -186,6 +236,7 @@ body{
 
 
 
+
 /* slider section */
 .sliderSection{
 
@@ -209,8 +260,8 @@ body{
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-evenly;
+
 }
 .sliderimg {
     width: 85%;
@@ -223,9 +274,10 @@ body{
     border-radius: 16px;
 }
 .slider i{
-    font-size: 50px;
-    
+    font-size: 50px;    
 }
+
+
 
 
 /* Advantages Section */
@@ -258,6 +310,11 @@ body{
 .advantagesimg img{
     border-radius: 16px;
 }
+.advantagesimg img:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px #fdbb81;
+    transition: 2s;
+}
 .advantagesText{
 
     height: 100%;
@@ -285,9 +342,6 @@ body{
     margin-top: 30px;
 
 }
-
-
-
 
 
 
@@ -350,7 +404,8 @@ body{
     position: relative;
     bottom: 80px;
     left: 30%;
- 
+    border: 10px solid #1E0C06;
+    border-radius: 16px;
 }
 .aboutusimg3{
     width: fit-content;
@@ -363,6 +418,11 @@ body{
     transform: scale(1.1);
     transition: 2s;
 }
+.aboutUs:hover{
+    box-shadow: 2px 2px 10px #fdbb81;
+    transition: 2s;
+}
+
 
 
 
@@ -379,6 +439,10 @@ body{
     background-position-y:170%;
      
     margin-top: 100px;
+}
+.formSection:hover{
+    background-position-y: 150%;
+    transition: 3s;
 }
 .formSection h2{
     text-align: right;
@@ -418,6 +482,10 @@ body{
     margin-bottom: 15px;
     background-color: #222021;
 }
+.form input:hover{
+    box-shadow: 2px 2px 10px #8bbbff;
+    transition: 1s;
+}
 .form textarea{
     height: 150px;
     width: 80%;
@@ -430,6 +498,10 @@ body{
     background-color: #222021;
 
 }
+.form textarea:hover{
+    box-shadow: 2px 2px 10px #8bbbff;
+    transition: 1s;
+}
 .form button{
     height: 40px;
     width: 150px;
@@ -440,14 +512,13 @@ body{
     font-size: 20px;
 }
 
-
 /* footer Section */
 
 .footerSection{
     height: 30vh;
     padding: 50px 100px;
     box-shadow: 5px 0px 10px 10px #afaeae52;
- 
+    
 }
 .footer{
     display: flex;
@@ -464,6 +535,7 @@ body{
 }
 .contactusp{
     display: flex;
+    align-items: center;
     gap: 20px;
 
 }
@@ -476,36 +548,323 @@ body{
 .footerprivacy{
     margin-top: 50px;
 }
-
-
-
-
-
-
+.footerp{
+    text-align: center;
+    margin-top: 30px;
+}
 
 /* Responsive */
 
+
 @media (min-width:300px) and (max-width:800px){
+    .main{
+        background-color: #222021;
+    }   
+    .headerHeroSection{
+        height: 70vh;
+
+    }
     .header{
-    
+        background-color: #1e0c06;
+        justify-content: space-between;
+        padding: 20px 30px;
+    }
+    .headericon{
+        display: flex;
+    }
+    .headericon:checked{
+        transition: 2s;
     }
     .logo img{
-        width: 50%;
+        height: 50px;
+        width: 60px;
     }
-
+    .navItems{
+        display: none;
+    }
     .navItems ul{
         display: block;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .navItems ul li{
+        margin-top: 30px;
     }
 
     /* hero section */
-    .herosectionset{
-        background-color: azure;
-    }
     .heroSection{
-        display: block;
-    }   
+        height: 40vh;
+        width: 90%;
+        margin-top: 50px;
+    }
+    .heroSectionText{
+        /* background-color: yellow; */
+        padding: 10px ;
+    }
+    .heroSectionText h1{
+        width:300px;
+        font-size: 2.5em;
+        /* background-color: #7B91AF; */
+    }
+    .heroSection p{
+        font-size: 1.5em;
+      
+        width: 250px;
+    }
+    .heroSectionText button{
+        height: 40px;
+        width: 100px;
+        font-size: 18px;
+        text-align: center;
+        padding: 0%;
+    }
     .heroSection::after{
-        transform: rotate(0deg);
-        bottom: -10%;
+        background-color: #ffffff;
+        transform: rotate(180deg);
+        width: 80%;
+        top: 45%;
+        left: 15%;
+    }
+    .heroimg1 img{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: 350px;
+        left: 0px;
+        
+    }
+    .heroimg2 img{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: 35px;
+        right: -10px;
+        
+    }
+    .heroimg3 img{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: 70px;
+        right: 180px;
+        } 
+
+    /* wood we use */
+    .WoodUse{
+        margin-top: 50px;
+        height: 50vh;
+    }
+    .WoodUse h2{
+        width: 90%;
+        font-size: 2em;
+        position: relative;
+        left: 0%;
+        padding-left: 20px;
+    }
+    .woodUseCards{
+        justify-content: space-evenly;
+    }
+    .woodUseCrd{
+        width: fit-content;
+    }
+    .woodUseCrd:hover{
+        transform: none;
+    }
+    .woodusecardimg{
+        justify-content: center;
+    }
+    .woodUseCrd img{
+        height: 70px;
+        width: 70px;
+    }
+    .woodUseCrd h4{
+        font-size: 18px;
+        width: 100%;
+    }
+    .wooduselist ul{
+        font-size: 16px;
+        text-align: center;
+    }
+    .wooduselist ul li i{
+        font-size: 18px;
+    }
+
+
+
+    /* Slider Seciton */
+    .sliderSection{
+        height: 40vh;
+    }
+    .sliderSection h2{
+        font-size: 2.5em;
+       margin-left: 0%;
+    }
+    .slider{
+        height: 30vh;
+        gap: 5px;
+    }
+    .slider i {
+        font-size: 18px;
+    }
+    .sliderimg{
+        width: 89%;
+    }
+   
+
+    /* Advantages Section */
+
+    .Advantantages{
+        height: 80vh;
+    }
+    .Advantantages h2{
+        font-size: 2.1rem;
+        font-weight: 400;
+        margin-left: 0%;
+        width: 100%;
+        line-height: 45px;
+        margin-bottom: 50px;
+    }
+    .advantagesDescription{
+        flex-wrap: wrap-reverse;
+        margin: 0%;
+        width: 100%;
+    }
+    .advantagesText {
+        height: 40vh;
+        height: fit-content;
+        justify-content: start;
+        margin-left: -25px;
+        margin-bottom: 30px;
+    }
+    .advantagesText p{
+          font-size: 16px;
+        font-weight: 600;  
+    }
+    .advantagesimg{
+        width: 100%;
+    }
+    .advantagesimg img{
+        width: 100%;
+    }
+    .advantagesimg img:hover{
+        transform: none;
+    }
+    .Advantagesbutton button{
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+
+
+
+
+    /* about us Seciton */
+    
+    .aboutUs{
+        display: block;
+        padding: 20px;
+        height: fit-content;
+    }
+    .aboutUsText{
+     width: 90%;   
+    }
+    .aboutUs h2{
+        font-size: 2.5em;
+    }
+    .aboutUs p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .aboutusimg{
+        margin-top: 30px;
+    }
+    .aboutusimg1 img{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        left: 150px;
+        top: 20px;
+    }
+    .aboutusimg2 img{
+        height: 150px;
+        width: 150px;
+        position: relative;
+        top: -50px;
+        left: 3px;
+    }
+    .aboutusimg3 img{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+
+
+
+
+    /* form Section */
+
+    .formSection{
+        padding: 20px;
+        background-image: none;
+    }
+    .formSection:hover{
+        background-position-y: 0%;
+    }
+    .formSection h2{
+        text-align: left;
+        font-size: 1.9rem;
+        font-weight: 500;
+        position: relative;
+        right: 0;
+    }
+    .formSection p{
+        font-size: 16px;
+        width: 80%;
+        top: 10px;
+        left: 0px;
+        margin: 40px 0px;
+    }
+    .form{
+        width: 90%;
+    }
+    .form input{
+        width: 90%;
+    }   
+    .form textarea{
+        width: 90%;
+    }
+    .form button{
+        font-size: 16px;
+        font-weight: bold;
+        width: 100px;
+    }
+
+
+    /* footer Section */
+    .footerSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer{
+        flex-direction: column;
+        width: 350px;
+        padding: 0%;
+    }
+    .foooter img{
+        margin-bottom: 50px;
+    }
+    .footer p{
+        margin-top: 30px;
+    }
+    .footerprivacy{
+        text-align: center;
+    }
+    .contactusp i{
+        text-align: center;
+        align-items: center;
     }
 }
