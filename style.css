@@ -4,16 +4,16 @@
 }
 
 body{
-    background-color: #222021;
+    /* background-color: #1E0C06; */
     color: #ffffff;
     font-family: sans-serif;
 
       
 }
 .main{
-    background-image: url(./assets/background.png);
-    background-repeat: repeat;
-    
+    /* background-color: #ffffff; */
+    background-color: #222021;
+    background-image: url(./assets/background3.svg);
 }
 .main button:hover{
     background-color: #8bbbff;
@@ -121,7 +121,7 @@ body{
 }
 
 .heroSectionText h1{
-    font-size: 75px;
+    font-size: 5.8vw;
     font-weight: 500;
 }
 .heroSectionText p {
@@ -581,6 +581,7 @@ body{
     }
     .navItems{
         display: none;
+    
     }
     .navItems ul{
         display: block;
